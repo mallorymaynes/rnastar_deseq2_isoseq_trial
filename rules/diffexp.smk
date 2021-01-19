@@ -43,7 +43,7 @@ rule deseq2_init:
 	shell:
 		"""
 		module load R;
-		Rscript ../scripts/deseq2-init.R {input.counts} {output} {params.samples} {log} {threads} 
+		Rscript ../scripts/deseq2-init.R {input.counts} {output} {params.samples} {log} {threads}
 		"""
 
 rule pca:
